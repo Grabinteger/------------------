@@ -1,0 +1,111 @@
+<!DOCTYPE html>                                   <!-- Напиши ! для отображения быстрого меню -->
+<html lang="ru">                                  <!-- Изменение языка -->
+
+<head>
+    <meta charset="UTF-8">                        <!-- Изменение понимая русских букв на сайте -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Сайт Портфолио </title>               <!-- Название страницы сайта -->
+
+    <link rel="stylesheet" href="./CSS/main.css"> <!-- link Соединяем стиль css с сайтом. Добавлением ./ закрепляет именно в папке нахождения, не будет ошибок на других серверах как с просто / -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">                                               <!-- Подключение шрифта -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                                      <!-- И это -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">  <!-- И это -->
+</head>
+
+<body>
+
+    <div class="header">                          <!-- div - контейнер, всё что в нём остается в нем. class="header" - Класс для редактироваие в css -->
+        <h1 class="header-title"> Поздняков Владислав Дмитриевич </h1>                <!-- Текст с классом header-title главный текст -->
+        <p class="header-subtitle"> веб-разработчик, фотограф, IT-специалист, дизайнер, 1С-Программист </p>  <!-- Текст с классом header-subtitle то-есть подзагаловок -->
+    
+        <div class="header-strelochka">
+            <img src="./Img/header/strelochka.svg" alt="header-strelochka">
+        </div>
+    </div>
+
+    <div class="portfolio">
+        <div class="container">
+            <h2 class="portfolio-header">Портфолио</h2>
+
+            <!-- portfolio-cards-wrapper -->
+                <div class="portfolio-cards-wrapper">
+
+                <!-- Card -->
+                <div class="card">
+                    <img class="card-img" src="./Img/portfolio/rab1.jpg" alt="картинка 1">
+                    <h3 class="card-title"> Многостраничный сайт </h3>
+                    <p> Верстка многостраничного сайта. </p>
+                </div>
+                <!-- Card -->
+
+                <!-- Card -->
+                <div class="card">
+                    <img class="card-img" src="./Img/portfolio/rab2.jpg" alt="картинка 2">
+                    <h3 class="card-title"> Адаптивный лендинг </h3>
+                    <p> Верстка многостраничного сайта. </p>
+                </div>
+                <!-- Card -->
+
+                <!-- Card -->
+                <div class="card">
+                    <img class="card-img" src="./Img/portfolio/rab3.jpg" alt="картинка 3">
+                    <h3 class="card-title"> Личный сайт </h3>
+                    <p> Верстка многостраничного сайта. </p>
+                </div>
+                <!-- Card -->
+
+                <!-- Card -->
+                <div class="card">
+                    <img class="card-img" src="./Img/portfolio/rab4.jpg" alt="картинка 4">
+                    <h3 class="card-title"> Интернет магазин </h3>
+                    <p> Верстка многостраничного сайта. </p>
+                </div>
+                <!-- Card -->
+
+            </div>
+            <!-- portfolio-cards-wrapper -->
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="conteiner">
+            <div class="footer-row">
+
+                <div class="footer-copyright">
+                    <div class="footer-copyright-name"> © Поздняков В.Д. </div>
+                    <p>HTML верстка и разработка сайтов</p>
+                </div>
+
+                <div class="footer-icons">
+                    <p> Мои профили в социальных сетях </p>
+                    <div class="footer-icons-row">
+                        <a href="#">                                                <!-- Ссылки, при нажатии на ико откроется добавлеия ссылка -->
+                          <img src="./Img/icons/facebook.svg" alt="">
+                        </a>
+
+                        <a href="#"></a>
+                            <img src="./Img/icons/github.svg" alt="">
+                        </a>
+
+                        <a href="#"></a>
+                            <img src="./Img/icons/instogram.svg" alt="">
+                        </a>
+
+                        <a href="#"></a>
+                            <img src="./Img/icons/vk.svg" alt="">
+                        </a>
+
+                        <a href="#"></a>
+                            <img src="./Img/icons/linkedin.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

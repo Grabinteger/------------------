@@ -1,0 +1,188 @@
+/* Общие стили */
+* {
+  box-sizing: border-box;
+}
+
+body {                                 /* Редактирование всей страницы контента */
+  margin: 0;                           /* Внешние отступы */
+  font-family: 'Oswald', sans-serif;   /* Подключенный шрифт, если добавить в body то для всех шрифтов. sans-serif - без засечик */
+}
+
+.container {
+  max-width: 1110px;
+  margin-left: auto;                   /* Выравнивает блок слева */
+  margin-right: auto;                  /* Выравнивает блок справа */
+}
+
+/* Шапка */
+
+.header {                              /* Класс для шапки */
+  position: relative;                  /* Важное для позицианирование */
+  display: flex;                       /* Всё в этом классе будет выставлятся по правилам flex */
+  flex-direction: column;              /* column - выстраиваються в колонки. row - выстраиваются в ряд */
+  justify-content: center;             /* Вертикально по центру */
+  align-items: center;                 /* Горизонтально по центру */
+
+  width: 100%;                         /* Ширина */
+  height: 45px;                       /* Высота vh-это проценты отображения нью порта*/
+    
+    background-color: #C8A35F;       /* Цвет заливки */
+    /*background-image: url("./../);  /* ./ - Текущая дериктория ../ - Выйти на уровень вверх */
+    background-size: cover;            /* background-size - размер фонового изображение. cover - заполнение блока */
+    background-position: center;       /* Центрирование */
+}
+
+.header-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-ru-eng-fr {
+  color: rgb(255, 255, 255);
+}
+
+.header-subtitle {                     /* Редактор подзаголовка */
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  
+  text-align: center;
+  letter-spacing: 0.2em;               /* Растояние между буквами */
+  text-transform: uppercase;           /* Перевод текста в верхний регистр */
+  color: #FFFFFF; 
+}
+
+
+
+/* Обложка */
+.oblog-mays {
+  width: 48px;
+  height: 48px;
+
+  position: absolute;                  /* Позицианирование */
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.oblog-title {                        /* Редактор заголовка */
+/*font-style: italic; требуется если нужен курсив, либо наоборот normal */
+  margin: 0;                           /* Отступы */
+  margin-bottom: 25px;                 /* Отступ снизу */
+  
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 130%;                   /* Просчитать размер можно как: 1.3*56 */
+  
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+.portfolio {
+  padding-top: 20px;
+  padding-bottom: 115px;
+}
+
+.portfolio-header {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+  color: black;
+}
+
+.portfolio-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;         /* Выравнивание */
+}
+
+.card {
+  margin-bottom: 30px;
+  max-width: 540px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.322);   /* Добавление тени к карточкам. 0px горизонтальный 10px вертикальное 40px размытие тени */
+}
+
+.card:last-child {                       /* Выбор последней карточки */
+  margin-bottom: 0;
+}
+.card:nth-last-child(2) {               /* Выбор последней с конца карточки */
+  margin-bottom: 0;
+}
+
+.card-img {
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 130%;
+  color: black;
+}
+
+.card-title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: 600;
+  font-size: 24;
+  line-height: 130%;
+  color: black;
+}
+
+.card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 130%;
+  color: black;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 45px;
+  padding-bottom: 130px;
+  background: #0047a3;
+  color: #FFFFFF;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  color:#94a8c2
+}
+
+.footer-copyright-name {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 130%;
+  margin-bottom: 5px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.footer-icons p {
+  font-weight: 600px;
+  font-size: 16px;
+  line-height: 1.3;
+}

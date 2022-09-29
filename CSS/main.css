@@ -1,0 +1,502 @@
+/* Общие стили */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: #2F343A;
+    overflow-x: hidden; /* Скрываем горизонтальный scrollbar */
+    }
+    body::-webkit-scrollbar {
+        width: 10px;
+    }
+    body::-webkit-scrollbar-track {
+        background: #2F343A;
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: #c8a35f;
+        border-radius: 20px;
+        border: 3px solid #2F343A;
+}
+  
+.container {
+    max-width: 1520px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+/* Шапка */
+
+.header {
+    position: absolute;
+    width: 1920px;
+    height: 45px;
+    left: 0px;
+    top: 0px;
+    background: #c8a35f;
+    color: rgb(255, 255, 255);
+}
+
+.header-ru-eng-fr {
+    position: absolute;
+    height: 0px;
+    left: 400px;
+    top: -10px;
+}
+
+.header-text-nomer {
+    position: absolute;
+    height: 0px;
+    left: 900px;
+    top: -10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.header-text-mail {
+    position: absolute;
+    height: 0px;
+    left: 1420px;
+    top: -10px;
+    font-style: normal;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+/* Под шапник */
+
+.vkladki {
+    position: absolute;
+    width: 1110px;
+    height: 46px;
+    left: 405px;
+    top: 72px;
+}
+
+.logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 300px;
+    top: 40px;
+}
+.logo-ty {
+    position: absolute;
+    width: 250px;
+    height: 110px;
+    left: 0px;
+    top: -45px;
+}
+.logo-polosa {
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    left: 230px;
+    top: -16px;
+}
+.logo-gps {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 250px;
+    top: -5px;
+}
+
+.tecst-gps {
+    position: absolute;
+    width: 97px;
+    height: 16px;
+    left: 290px;
+    top: -20px;
+    letter-spacing: 0.10em;
+    color: #FFFFFF;
+}
+
+/* Главная Фото */
+
+.track {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top: 115px;
+}
+.gltext1 {
+    position: absolute;
+    font-size: 400%;
+    width: 1000px;
+    height: 0px;
+    left: 600px;
+    top: 250px;    
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.gltext2 {
+    position: absolute;
+    font-size: 120%;
+    width: 1000px;
+    height: 0px;
+    left: 710px;
+    top: 370px;    
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+}
+.gltext3 {
+    position: absolute;
+    font-size: 120%;
+    width: 1000px;
+    height: 0px;
+    left: 665px;
+    top: 400px;    
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+}
+
+.strelochka {
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    top: 650px;
+    transform: translate(-50%, 0);
+}
+
+
+/* Меню начало */
+
+.buttons {
+    position: relative;
+    white-space: nowrap;
+    min-height: 33px;
+    margin-bottom: 30px;
+      top: -27px;
+      margin-left: 700px 
+}
+.buttons a {
+    -webkit-animation: bounceInDown 900ms 200ms ease-in-out both;
+    -moz-animation: bounceInDown 900ms 200ms ease-in-out both;
+    -ms-animation: bounceInDown 900ms 200ms ease-in-out both;
+    -o-animation: bounceInDown 900ms 200ms ease-in-out both;
+    animation: bounceInDown 900ms 200ms ease-in-out both;
+    /* ширина каждой */
+    width: 140px;
+    /**/
+    height: 40px;
+    position: absolute;
+    top: 0;
+        text-decoration: none;
+        font-size: 130%;
+    padding-top: 9px;
+    outline-width: 0px;
+    z-index: 990;
+    color: #ffffff;
+    text-align: center;
+    line-height: 20px;
+    display: block; 
+}
+.buttons a:not(.active) {
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(211, 127, 0, 0.8), inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #150a1e;
+    -moz-box-shadow: inset 0 1px 1px rgba(211, 127, 0, 0.8), inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #150a1e;
+    box-shadow: inset 0 1px 1px rgba(211, 127, 0, 0.8), inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #150a1e;
+    */background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c8a35f), color-stop(100%, #977108));
+    background-image: -webkit-linear-gradient(#c8a35f, #000000);
+    background-image: -moz-linear-gradient(#c8a35f, #000000);
+    background-image: -o-linear-gradient(#c8a35f, #000000);
+    background-image: linear-gradient(#c8a35f, #181818);
+    text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #c8a35f; 
+}
+.buttons a:not(.active):hover, .buttons a:not(.active):focus {
+    -webkit-transition: color 200ms linear;
+    -moz-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    transition: color 200ms linear;
+    -webkit-transition: text-shadow 500ms linear;
+    -moz-transition: text-shadow 500ms linear;
+    -o-transition: text-shadow 500ms linear;
+    transition: text-shadow 500ms linear;
+    color: #ffffff;
+    text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c; 
+}
+.buttons a:not(.active):active {
+    color: #e4e3ce !important; 
+}
+.buttons a.active, .buttons a:active {
+    -webkit-box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px #977108, 0 2px 1px 0 rgba(121, 65, 135, 0.5), inset 0 0 4px 3px rgba(15, 8, 22, 0.2);
+    -moz-box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px #977108, 0 2px 1px 0 rgba(121, 65, 135, 0.5), inset 0 0 4px 3px rgba(15, 8, 22, 0.2);
+    box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px #977108, 0 2px 1px 0 rgba(121, 65, 135, 0.5), inset 0 0 4px 3px rgba(15, 8, 22, 0.2);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #977108), color-stop(100%, #977108));
+    background-image: -webkit-linear-gradient(#000000, #523c00);
+    background-image: -moz-linear-gradient(#000000, #523c00);
+    background-image: -o-linear-gradient(#000000, #523c00);
+    background-image: linear-gradient(#000000, #523c00);
+    text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
+    color: #e4e3ce; 
+}
+.buttons a.active:before, .buttons a:active:before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 1px;
+        height: 36px;
+        top: 1px;
+        left: -2px;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(211, 127, 0, 0)), color-stop(41%, #977108), color-stop(59%, #977108), color-stop(100%, rgba(211, 127, 0, 0)));
+        background-image: -webkit-linear-gradient(rgba(211, 127, 0, 0), #977108 41%, #977108 59%, rgba(211, 127, 0, 0));
+        background-image: -moz-linear-gradient(rgba(211, 127, 0, 0), #977108 41%, #977108 59%, rgba(211, 127, 0, 0));
+        background-image: -o-linear-gradient(rgba(211, 127, 0, 0), #977108 41%, #977108 59%, rgba(211, 127, 0, 0));
+        background-image: linear-gradient(rgba(211, 127, 0, 0), #977108 41%, #977108 59%, rgba(211, 127, 0, 0));
+        -webkit-box-shadow: -2px 0 6px 0 #000000;
+        -moz-box-shadow: -2px 0 6px 0 #000000;
+        box-shadow: -2px 0 6px 0 #000000; 
+}
+.buttons a.active:after, .buttons a:active:after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 1px;
+        height: 36px;
+        top: 1px;
+        right: -2px;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(211, 127, 0, 0)), color-stop(41%, #977108), color-stop(59%, #977108), color-stop(100%, rgba(211, 127, 0, 0)));
+        background-image: -webkit-linear-gradient(rgba(211, 127, 0, 0), #977108 41%, #977108 59%, rgba(211, 127, 0, 0));
+        background-image: -moz-linear-gradient(rgba(211, 127, 0, 0), #977108 41%, #977108 59%, rgba(211, 127, 0, 0));
+        background-image: -o-linear-gradient(rgba(211, 127, 0, 0), #977108 41%, #977108 59%, rgba(211, 127, 0, 0));
+        background-image: linear-gradient(rgba(211, 127, 0, 0), #977108 41%, #977108 59%, rgba(211, 127, 0, 0));
+        -webkit-box-shadow: 2px 0 6px 0 #977108;
+        -moz-box-shadow: 2px 0 6px 0 #977108;
+        box-shadow: 2px 0 6px 0 #977108; 
+}
+.buttons a.active {
+    z-index: 1000; 
+}
+.buttons a:active {
+    z-index: 999; 
+}
+.buttons a:last-of-type {
+    -webkit-border-radius: 0 7px 7px 0;
+    -moz-border-radius: 0 7px 7px 0;
+    -ms-border-radius: 0 7px 7px 0;
+    -o-border-radius: 0 7px 7px 0;
+    border-radius: 0 0px 7px 0; 
+}
+.buttons a:first-of-type {
+    -webkit-border-radius: 7px 0 0 7px;
+    -moz-border-radius: 7px 0 0 7px;
+    -ms-border-radius: 7px 0 0 7px;
+    -o-border-radius: 7px 0 0 7px;
+    border-radius: 0px 0 0 7px;
+    left: 0; 
+}
+
+/* дальность */
+
+.buttons a:nth-of-type(2) {
+    left: 141px; 
+}
+.buttons a:nth-of-type(3) {
+    left: 282px; 
+}
+.buttons a:nth-of-type(4) {
+    left: 423px; 
+}
+.buttons a:nth-of-type(5) {
+    left: 250px; 
+}
+.buttons a:nth-of-type(6) {
+    left: 255px; 
+}
+.buttons a:nth-of-type(7) {
+    left: 306px; 
+}
+.buttons a:nth-of-type(8) {
+    left: 357px; 
+}
+.buttons a i:before {
+    margin-left: 2px;
+    font-size: 22px; 
+}
+.buttons a i.icon-bar-chart:before {
+    font-size: 20px;
+    margin-top: 0px; 
+}
+.buttons a i.icon-sync:before {
+    font-size: 20px;
+    margin-left: 3px;
+    margin-top: 1px; 
+}
+.buttons a i.icon-download:before {
+    font-size: 19px;
+    margin-top: 1px;
+    margin-left: 4px; 
+}
+/* Меню конец */
+
+/* info gryp */
+
+.info-kvadrat {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top: 735px;
+}
+
+/* Дольнабои */
+.diman {
+    position: absolute;
+    width: 230px;
+    height: 180px;
+    left: 1500px;
+    top: 560px;    
+}
+.lisoagnida {
+    position: absolute;
+    width: 230px;
+    height: 180px;
+    left: 250px;
+    top: 560px; 
+}
+/* Конец */
+
+.trackico {
+    position: absolute;
+    left: 870px;
+    top: 900px;
+}
+
+.tyda {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: 1400px;
+    top: 900px;    
+}
+.syda {
+    position: absolute;
+    width: 199px;
+    height: 29px;
+    left: 1400px;
+    top: 1150px;    
+}
+
+.text-info1 {
+    position: absolute;
+    font-size: 400%;
+    width: 500px;
+    height: 0px;
+    left: 200px;
+    top: 820px;    
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.text-info2 {
+    position: absolute;
+    font-size: 150%;
+    width: 1000px;
+    height: 0px;
+    left: 200px;
+    top: 1090px;    
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+}
+.text-info3 {
+    position: absolute;
+    font-size: 150%;
+    width: 1000px;
+    height: 0px;
+    left: 200px;
+    top: 1140px;    
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+}
+
+.palkaorang {
+    position: absolute;
+    width: 200px;
+    left: 230px;
+    top: 820px;
+}
+.palkaorang2 {
+    position: absolute;
+    width: 200px;
+    left: 230px;
+    top: 1350px;
+}
+
+.kycha-fyr {
+    position: absolute;
+    width: 650px;
+    height: 400px;
+    left: 640px;
+    top: 2000px;
+}
+
+.a.idTop {
+    position: fixed; /*фиксация кнопки*/
+    z-index: 9999; /*отображение поверх всех элементов*/
+    bottom: 0%; /*положение снизу*/
+    right: 0%; /*размещение справа или слева (left)*/
+    opacity: .5; /*прозрачность*/
+    color: #fff; /*цвет текста*/
+    padding: 8px; /*отступы от внутренних краев*/
+    margin: 5px 15px 15px 5px; /*отступы от внешних краев*/
+   }
+   a.idTop:hover {
+    opacity: 1;
+}
+
+
+
+/* Footer */
+
+.footer {
+    position: absolute;
+    width: 1905px;
+    height: 150px;
+    top: 2300px;
+    padding-bottom: 130px;
+    background: #c8a35f;
+    color: #FFFFFF;
+  }
+  
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .footer-copyright {
+    color:#ffffff
+  }
+  
+  .footer-copyright-name {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    margin-bottom: 5px;
+  }
+  
+  .footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  
+  .footer-icons p {
+    font-weight: 600px;
+    font-size: 16px;
+    line-height: 1.3;
+}
